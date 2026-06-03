@@ -4,17 +4,13 @@
    ============================================================ */
 
 :root {
-  :root {
-  --accent:       #2563eb;   /* keep blue */
-  --accent-dark:  #1d4ed8;
-
-  --bg:           #000000;   /* full black background */
-  --surface:      #111111;   /* cards/nav slightly lighter black */
-
-  --text:         #ffffff;   /* white main text */
-  --muted:        #d1d5db;   /* light gray secondary text */
-
-  --border:       #2a2a2a;
+  --accent:    #2563eb;
+  --accent-dark: #1d4ed8;
+  --bg:        #f8fafc;
+  --surface:   #ffffff;
+  --text:      #1e293b;
+  --muted:     #64748b;
+  --border:    #e2e8f0;
   --radius:    0.5rem;
   --shadow:    0 2px 8px rgba(0,0,0,.08);
   --font:      'Segoe UI', system-ui, sans-serif;
@@ -97,7 +93,7 @@ nav {
 /* ── Hero ── */
 .hero {
   padding: 5rem 0 4rem;
-  background: linear-gradient(135deg, #111111 60%, #000000 100%);
+  background: linear-gradient(135deg, var(--surface) 60%, #eff6ff 100%);
   border-bottom: 1px solid var(--border);
 }
 .hero-inner {
@@ -145,10 +141,10 @@ nav {
 .badge {
   font-size: .75rem;
   padding: .2rem .6rem;
-  background: #172554;
-  color: #93c5fd;
+  background: #eff6ff;
+  color: var(--accent);
   border-radius: 999px;
-  border: 1px solid #2563eb;
+  border: 1px solid #bfdbfe;
 }
 
 /* ── Skills ── */
